@@ -14,6 +14,7 @@
 		272EA3E71E32DDB9004749A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272EA3E51E32DDB9004749A4 /* LaunchScreen.storyboard */; };
 		272EA3F21E32DDB9004749A4 /* iSDUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272EA3F11E32DDB9004749A4 /* iSDUTests.swift */; };
 		272EA3FD1E32DDB9004749A4 /* iSDUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272EA3FC1E32DDB9004749A4 /* iSDUUITests.swift */; };
+		EE71E5FB2546E994DA282D45 /* Pods_iSDU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224BF56AE18D2E33102795A0 /* Pods_iSDU.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		224BF56AE18D2E33102795A0 /* Pods_iSDU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSDU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		272EA3D91E32DDB8004749A4 /* iSDU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSDU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272EA3DC1E32DDB8004749A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272EA3DE1E32DDB8004749A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		272EA3F81E32DDB9004749A4 /* iSDUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSDUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		272EA3FC1E32DDB9004749A4 /* iSDUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSDUUITests.swift; sourceTree = "<group>"; };
 		272EA3FE1E32DDB9004749A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC32279F7A228709986BA49 /* Pods-iSDU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSDU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSDU/Pods-iSDU.release.xcconfig"; sourceTree = "<group>"; };
+		61BEF5EDF2238846C1ED26C9 /* Pods-iSDU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSDU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSDU/Pods-iSDU.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE71E5FB2546E994DA282D45 /* Pods_iSDU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				272EA3F01E32DDB9004749A4 /* iSDUTests */,
 				272EA3FB1E32DDB9004749A4 /* iSDUUITests */,
 				272EA3DA1E32DDB8004749A4 /* Products */,
+				699B2232D77D2108F4EAA18A /* Pods */,
+				649E7DA24491F2A72C9975DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = iSDUUITests;
 			sourceTree = "<group>";
 		};
+		649E7DA24491F2A72C9975DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				224BF56AE18D2E33102795A0 /* Pods_iSDU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		699B2232D77D2108F4EAA18A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61BEF5EDF2238846C1ED26C9 /* Pods-iSDU.debug.xcconfig */,
+				4CC32279F7A228709986BA49 /* Pods-iSDU.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272EA4011E32DDB9004749A4 /* Build configuration list for PBXNativeTarget "iSDU" */;
 			buildPhases = (
+				C28442A79A4D8F269C0114BF /* [CP] Check Pods Manifest.lock */,
 				272EA3D51E32DDB8004749A4 /* Sources */,
 				272EA3D61E32DDB8004749A4 /* Frameworks */,
 				272EA3D71E32DDB8004749A4 /* Resources */,
+				E328830C4AE9A77D2BD28C7D /* [CP] Embed Pods Frameworks */,
+				2458B8F2476A534BD4F5E2C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,7 @@
 				TargetAttributes = {
 					272EA3D81E32DDB8004749A4 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6X34763RUV;
 						ProvisioningStyle = Automatic;
 					};
 					272EA3EC1E32DDB9004749A4 = {
@@ -253,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2458B8F2476A534BD4F5E2C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSDU/Pods-iSDU-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28442A79A4D8F269C0114BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E328830C4AE9A77D2BD28C7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSDU/Pods-iSDU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		272EA3D51E32DDB8004749A4 /* Sources */ = {
@@ -410,8 +486,10 @@
 		};
 		272EA4021E32DDB9004749A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BEF5EDF2238846C1ED26C9 /* Pods-iSDU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6X34763RUV;
 				INFOPLIST_FILE = iSDU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = China.iSDU;
@@ -422,8 +500,10 @@
 		};
 		272EA4031E32DDB9004749A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC32279F7A228709986BA49 /* Pods-iSDU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6X34763RUV;
 				INFOPLIST_FILE = iSDU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = China.iSDU;
@@ -505,6 +585,7 @@
 				272EA4031E32DDB9004749A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		272EA4041E32DDB9004749A4 /* Build configuration list for PBXNativeTarget "iSDUTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +594,7 @@
 				272EA4061E32DDB9004749A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		272EA4071E32DDB9004749A4 /* Build configuration list for PBXNativeTarget "iSDUUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +603,7 @@
 				272EA4091E32DDB9004749A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
