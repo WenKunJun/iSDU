@@ -6,15 +6,26 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Page View Controller-->
-        <scene sceneID="KU3-OF-YNx">
+        <!--Welcome Page-->
+        <scene sceneID="dhB-7k-8H1">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Ho9-DQ-AR8" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HXx-Fv-AdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Iao-T6-xvE" customClass="WelcomePage" customModule="iSDU" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gq8-Rt-Cyq"/>
+                        <viewControllerLayoutGuide type="bottom" id="0bq-eP-SW7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HzS-Nj-6G3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1C-fx-aiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="184"/>
+            <point key="canvasLocation" x="-124" y="-57"/>
         </scene>
     </scenes>
 </document>

@@ -70,7 +70,7 @@ extension WelcomePage: UICollectionViewDelegate, UICollectionViewDataSource {
     internal func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! GuideCell
         cell.newImage = UIImage(named: imageNames[indexPath.row])
-        if indexPath.row != imageNames.count - 1 { // 3
+        if indexPath.row != imageNames.count - 1{ // 3
             cell.setNextButtonHidden(true) // 如果不是第三张就隐藏button
         }
         return cell
