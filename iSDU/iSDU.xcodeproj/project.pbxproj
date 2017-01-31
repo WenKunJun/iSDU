@@ -36,17 +36,17 @@
 
 /* Begin PBXFileReference section */
 		224BF56AE18D2E33102795A0 /* Pods_iSDU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSDU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		272EA3D91E32DDB8004749A4 /* iSDU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSDU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		272EA3D91E32DDB8004749A4 /* iSDU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iSDU.app; path = "/Volumes/MacUse/Floders/iOS Projects/iSDU Project/iSDU/build/Debug-iphoneos/iSDU.app"; sourceTree = "<absolute>"; };
 		272EA3DC1E32DDB8004749A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272EA3DE1E32DDB8004749A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		272EA3E11E32DDB8004749A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		272EA3E31E32DDB9004749A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272EA3E61E32DDB9004749A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272EA3E81E32DDB9004749A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		272EA3ED1E32DDB9004749A4 /* iSDUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSDUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		272EA3ED1E32DDB9004749A4 /* iSDUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = iSDUTests.xctest; path = "/Volumes/MacUse/Floders/iOS Projects/iSDU Project/iSDU/build/Debug-iphoneos/iSDUTests.xctest"; sourceTree = "<absolute>"; };
 		272EA3F11E32DDB9004749A4 /* iSDUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSDUTests.swift; sourceTree = "<group>"; };
 		272EA3F31E32DDB9004749A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		272EA3F81E32DDB9004749A4 /* iSDUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSDUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		272EA3F81E32DDB9004749A4 /* iSDUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = iSDUUITests.xctest; path = "/Volumes/MacUse/Floders/iOS Projects/iSDU Project/iSDU/build/Debug-iphoneos/iSDUUITests.xctest"; sourceTree = "<absolute>"; };
 		272EA3FC1E32DDB9004749A4 /* iSDUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSDUUITests.swift; sourceTree = "<group>"; };
 		272EA3FE1E32DDB9004749A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CC32279F7A228709986BA49 /* Pods-iSDU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSDU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSDU/Pods-iSDU.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,20 +85,9 @@
 				272EA3DB1E32DDB8004749A4 /* iSDU */,
 				272EA3F01E32DDB9004749A4 /* iSDUTests */,
 				272EA3FB1E32DDB9004749A4 /* iSDUUITests */,
-				272EA3DA1E32DDB8004749A4 /* Products */,
 				699B2232D77D2108F4EAA18A /* Pods */,
 				649E7DA24491F2A72C9975DA /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		272EA3DA1E32DDB8004749A4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				272EA3D91E32DDB8004749A4 /* iSDU.app */,
-				272EA3ED1E32DDB9004749A4 /* iSDUTests.xctest */,
-				272EA3F81E32DDB9004749A4 /* iSDUUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		272EA3DB1E32DDB8004749A4 /* iSDU */ = {
@@ -244,7 +233,7 @@
 				Base,
 			);
 			mainGroup = 272EA3D01E32DDB8004749A4;
-			productRefGroup = 272EA3DA1E32DDB8004749A4 /* Products */;
+			productRefGroup = 272EA3D01E32DDB8004749A4;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
