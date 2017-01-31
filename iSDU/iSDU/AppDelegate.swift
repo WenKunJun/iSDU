@@ -40,7 +40,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    private func buildKeyWindow() {
+        window = UIWindow(frame: ScreenBounds)
+        window!.makeKeyAndVisible()
+        let isFristOpen = UserDefaults.standard.object(forKey: "isFristOpenApp")
+        if isFristOpen == nil {
+            window?.rootViewController = WelcomePage()
+            UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
+        } else {
+            window!.rootViewController = ViewController()
+        }
+    }
 
 }
 
