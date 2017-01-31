@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -50,7 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = WelcomePage()
             UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
         } else {
-            window!.rootViewController = ViewController()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            _ = storyboard.instantiateViewController(withIdentifier: "mainVC")
+            window?.rootViewController = ViewController()
+//            window?.rootViewController = UINavigationController(rootViewController: ViewController())
+            
         }
     }
 

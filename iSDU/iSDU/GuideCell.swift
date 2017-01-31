@@ -44,5 +44,8 @@ class GuideCell: UICollectionViewCell {
     // GuideViewControllerDidFinish 还有一处在app.delegate中 进入到主界面中使用的
     func nextButtonClick() {
         NotificationCenter.default.post(name: Notification.Name(rawValue: GuideViewControllerDidFinish), object: nil)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            _ = storyboard.instantiateViewController(withIdentifier: "mainVC")
+        
     }
 }
