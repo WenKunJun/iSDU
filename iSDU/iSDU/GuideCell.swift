@@ -13,6 +13,17 @@ import UIKit
 public let GuideViewControllerDidFinish = "GuideViewControllerDidFinish"
 
 class GuideCell: UICollectionViewCell {
+    //类似于OC中的typedef
+    typealias sendValueClosure = ()->Void
+    var i:Int?
+    
+    var myClosure:sendValueClosure?
+    
+    func initWithClosure(closure:sendValueClosure?){
+        
+            myClosure = closure
+    }
+    
     fileprivate let newImageView = UIImageView(frame: ScreenBounds)
     fileprivate let nextButton = UIButton(frame: CGRect(x: (ScreenWidth - 100) * 0.5, y: ScreenHeight - 110, width: 100, height: 33))
     
@@ -31,6 +42,7 @@ class GuideCell: UICollectionViewCell {
         nextButton.addTarget(self, action: #selector(GuideCell.nextButtonClick), for: UIControlEvents.touchUpInside)
         nextButton.isHidden = true
         contentView.addSubview(nextButton)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -44,8 +56,9 @@ class GuideCell: UICollectionViewCell {
     // GuideViewControllerDidFinish 还有一处在app.delegate中 进入到主界面中使用的
     func nextButtonClick() {
         NotificationCenter.default.post(name: Notification.Name(rawValue: GuideViewControllerDidFinish), object: nil)
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            _ = storyboard.instantiateViewController(withIdentifier: "mainVC")
+        if ((self.myClosure) != nil) {
+            myClosure!()
+        }
         
     }
 }

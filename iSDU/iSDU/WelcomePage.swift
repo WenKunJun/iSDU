@@ -73,6 +73,13 @@ extension WelcomePage: UICollectionViewDelegate, UICollectionViewDataSource {
         if indexPath.row != imageNames.count - 1{ // 3
             cell.setNextButtonHidden(true) // 如果不是第三张就隐藏button
         }
+        func changeView () -> Void {let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+            self.present(vc, animated: true, completion: nil)
+            
+        }
+        cell.initWithClosure(closure: changeView)
+        
         return cell
     }
     

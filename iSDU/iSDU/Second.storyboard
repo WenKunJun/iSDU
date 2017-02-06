@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zxv-rV-QqC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="4Q3-Xr-FYd">
+            <objects>
+                <navigationController id="Zxv-rV-QqC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sRH-zS-qal"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yfH-aH-qHK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KLw-9F-Rgd" kind="relationship" relationship="rootViewController" id="UUd-iX-X2e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEE-Eh-DrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="-40"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yMo-8u-aeZ">
+            <objects>
+                <viewController id="KLw-9F-Rgd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kqk-So-chI"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJz-Wl-FNH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KnH-bt-Yrl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LxS-7E-pyf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvo-Ik-9pV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-40"/>
+        </scene>
+    </scenes>
+</document>

@@ -51,9 +51,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = WelcomePage()
             UserDefaults.standard.set("isFristOpenApp", forKey: "isFristOpenApp")
         } else {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            _ = storyboard.instantiateViewController(withIdentifier: "mainVC")
-            window?.rootViewController = ViewController()
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+            window?.rootViewController = vc
+
 //            window?.rootViewController = UINavigationController(rootViewController: ViewController())
             
         }
