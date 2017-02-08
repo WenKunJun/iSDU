@@ -1,0 +1,7 @@
+platform :ios, '10.0'
+target 'iSDU' do
+ use_frameworks!
+ pod 'AFNetworking', '~> 2.6'
+ pod 'Alamofire', '~> 4.0' 
+ pod 'SwiftyJSON'
+ end
