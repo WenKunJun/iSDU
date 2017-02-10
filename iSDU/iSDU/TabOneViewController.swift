@@ -65,7 +65,6 @@ class TabOneViewController: UIViewController , CLLocationManagerDelegate{
                 break
             case .failure(_):
                 print("Failure :======> \(response.result.error)")
-                
             }
         }
         
