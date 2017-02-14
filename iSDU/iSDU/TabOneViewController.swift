@@ -23,6 +23,7 @@ class TabOneViewController: UIViewController , CLLocationManagerDelegate{
         // Do any additional setup after loading the view, typically from a nib.
         LocationManager.requestAlwaysAuthorization()
         LocationManager.startUpdatingLocation()
+        updateWeatherInfo(latitude: (LocationManager.location?.coordinate.latitude)!, longitude: (LocationManager.location?.coordinate.longitude)!)
     }
     
     //实现satrtUpdatingLocation() 的回调
