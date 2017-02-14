@@ -20,10 +20,9 @@ class TabOneViewController: UIViewController , CLLocationManagerDelegate{
         super.viewDidLoad()
         LocationManager.delegate = self
         LocationManager.desiredAccuracy = kCLLocationAccuracyBest
-        // Do any additional setup after loading the view, typically from a nib.
         LocationManager.requestAlwaysAuthorization()
         LocationManager.startUpdatingLocation()
-        updateWeatherInfo(latitude: (LocationManager.location?.coordinate.latitude)!, longitude: (LocationManager.location?.coordinate.longitude)!)
+//        updateWeatherInfo(latitude: (LocationManager.location?.coordinate.latitude)!, longitude: (LocationManager.location?.coordinate.longitude)!)
     }
     
     //实现satrtUpdatingLocation() 的回调
@@ -42,9 +41,12 @@ class TabOneViewController: UIViewController , CLLocationManagerDelegate{
     //更新天气信息
     func updateWeatherInfo(latitude:CLLocationDegrees,longitude:CLLocationDegrees) {
         let mParams = ["lat":latitude,"lon":longitude]
+//        let mUrl = "https://api.thinkpage.cn/v3/weather/now.json?key=hqz8lpvqz0tjvcvf&location=\(latitude):\(longitude)&language=zh-Hans&unit=c"
+       
         let mUrl = "https://api.thinkpage.cn/v3/weather/now.json?key=hqz8lpvqz0tjvcvf&location=\(latitude):\(longitude)&language=zh-Hans&unit=c"
         
         print(mUrl)
+        print("\(latitude):\(longitude)")
         
         Alamofire.request(mUrl, method: .get, parameters: mParams, encoding: URLEncoding.default, headers: nil).responseJSON{(response:DataResponse<Any>) in
             switch(response.result){
