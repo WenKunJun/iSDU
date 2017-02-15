@@ -38,13 +38,68 @@
                     <view key="view" contentMode="scaleToFill" id="qIt-2L-jzL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJ2-1y-6qr">
+                                <rect key="frame" x="0.0" y="64" width="187" height="73"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="22U-6f-la8"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qQE-Qw-OCD" appends="YES" id="Wed-Np-uA4"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1od-oO-C9Z">
+                                <rect key="frame" x="187" y="64" width="188" height="73"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="ias-xY-894"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5i4-Wt-xqA" appends="YES" id="Iur-R0-4jR"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="jJ2-1y-6qr" firstAttribute="top" secondItem="sPV-vr-h6y" secondAttribute="bottom" id="0aC-36-n8Y"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="leading" secondItem="jJ2-1y-6qr" secondAttribute="trailing" id="4ey-7H-Zmc"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="leading" secondItem="jJ2-1y-6qr" secondAttribute="trailing" id="ATe-9c-8hM"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="top" secondItem="sPV-vr-h6y" secondAttribute="bottom" id="PMO-aM-QNA"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="centerY" secondItem="jJ2-1y-6qr" secondAttribute="centerY" id="h5v-8s-Z6d"/>
+                            <constraint firstItem="jJ2-1y-6qr" firstAttribute="leading" secondItem="qIt-2L-jzL" secondAttribute="leading" id="hZG-3S-5qU"/>
+                            <constraint firstAttribute="trailing" secondItem="1od-oO-C9Z" secondAttribute="trailing" id="sCz-Dt-b8D"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="leading" secondItem="qIt-2L-jzL" secondAttribute="leading" constant="187" id="viw-2v-tIG"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NX0-NT-4Hh"/>
+                    <navigationItem key="navigationItem" id="NX0-NT-4Hh">
+                        <barButtonItem key="rightBarButtonItem" title="Today" id="EPc-Hf-vd4">
+                            <connections>
+                                <action selector="Today:" destination="1eU-Hg-n3I" id="DQt-Bw-JzX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nextView" destination="1od-oO-C9Z" id="gOa-cG-4xz"/>
+                        <outlet property="previousView" destination="jJ2-1y-6qr" id="2fg-V5-qPv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lK6-Os-pK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qQE-Qw-OCD">
+                    <connections>
+                        <action selector="loadPrevious:" destination="1eU-Hg-n3I" id="C1m-AA-EVf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5i4-Wt-xqA">
+                    <connections>
+                        <action selector="loadNext:" destination="1eU-Hg-n3I" id="ebl-yE-rHS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1022" y="-773"/>
+            <point key="canvasLocation" x="1021.6" y="-773.16341829085468"/>
         </scene>
     </scenes>
 </document>
