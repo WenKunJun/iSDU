@@ -52,6 +52,7 @@
 		722D82CC1E4B035E00351231 /* CVStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D82AE1E4B035E00351231 /* CVStatus.swift */; };
 		722D82CD1E4B035E00351231 /* CVWeekdaySymbolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722D82AF1E4B035E00351231 /* CVWeekdaySymbolType.swift */; };
 		722D82CE1E4B035E00351231 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 722D82B01E4B035E00351231 /* Info.plist */; };
+		72BF227A1E55FCE20090225D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BF22771E55FCE20090225D /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,9 @@
 		722D82AE1E4B035E00351231 /* CVStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVStatus.swift; sourceTree = "<group>"; };
 		722D82AF1E4B035E00351231 /* CVWeekdaySymbolType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVWeekdaySymbolType.swift; sourceTree = "<group>"; };
 		722D82B01E4B035E00351231 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72BF22771E55FCE20090225D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		72BF22781E55FCE20090225D /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		72BF22791E55FCE20090225D /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BF227A1E55FCE20090225D /* libWeChatSDK.a in Frameworks */,
 				234CEA976B130FA90B0B93A9 /* Pods_iSDU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +193,7 @@
 		272EA3DB1E32DDB8004749A4 /* iSDU */ = {
 			isa = PBXGroup;
 			children = (
+				72BF22761E55FCE20090225D /* WeChatSDK */,
 				722D82911E4B035E00351231 /* CVCalendar */,
 				271E31201E39811A00CE745C /* Ui */,
 				271E311F1E3980F600CE745C /* Funcs */,
@@ -259,6 +265,16 @@
 				722D82B01E4B035E00351231 /* Info.plist */,
 			);
 			path = CVCalendar;
+			sourceTree = "<group>";
+		};
+		72BF22761E55FCE20090225D /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				72BF22771E55FCE20090225D /* libWeChatSDK.a */,
+				72BF22781E55FCE20090225D /* WXApi.h */,
+				72BF22791E55FCE20090225D /* WXApiObject.h */,
+			);
+			path = WeChatSDK;
 			sourceTree = "<group>";
 		};
 		ADF23D8E759609CD086DDE20 /* Frameworks */ = {
@@ -685,6 +701,10 @@
 				DEVELOPMENT_TEAM = 6X34763RUV;
 				INFOPLIST_FILE = iSDU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iSDU/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = China.iSDU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -699,6 +719,10 @@
 				DEVELOPMENT_TEAM = 6X34763RUV;
 				INFOPLIST_FILE = iSDU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iSDU/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = China.iSDU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
