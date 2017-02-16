@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xNo-1a-oz0">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="splitview2_3"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -36,29 +36,41 @@
                         <viewControllerLayoutGuide type="bottom" id="saA-Hv-vcM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qIt-2L-jzL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="981" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1od-oO-C9Z">
+                                <rect key="frame" x="490.5" y="64" width="490.5" height="73"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="hQl-YQ-V1s"/>
+                                    <constraint firstAttribute="height" constant="73" id="ias-xY-894"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ias-xY-894"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5i4-Wt-xqA" appends="YES" id="Iur-R0-4jR"/>
+                                </connections>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJ2-1y-6qr">
-                                <rect key="frame" x="0.0" y="64" width="187" height="73"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="64" width="490.5" height="73"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="22U-6f-la8"/>
+                                    <constraint firstAttribute="height" constant="73" id="mKZ-fk-RlZ"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="22U-6f-la8"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="qQE-Qw-OCD" appends="YES" id="Wed-Np-uA4"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1od-oO-C9Z">
-                                <rect key="frame" x="187" y="64" width="188" height="73"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="ias-xY-894"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="5i4-Wt-xqA" appends="YES" id="Iur-R0-4jR"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -66,14 +78,32 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="jJ2-1y-6qr" firstAttribute="top" secondItem="sPV-vr-h6y" secondAttribute="bottom" id="0aC-36-n8Y"/>
-                            <constraint firstItem="1od-oO-C9Z" firstAttribute="leading" secondItem="jJ2-1y-6qr" secondAttribute="trailing" id="4ey-7H-Zmc"/>
                             <constraint firstItem="1od-oO-C9Z" firstAttribute="leading" secondItem="jJ2-1y-6qr" secondAttribute="trailing" id="ATe-9c-8hM"/>
+                            <constraint firstItem="jJ2-1y-6qr" firstAttribute="leading" secondItem="qIt-2L-jzL" secondAttribute="leading" id="Ckx-4H-DOt"/>
+                            <constraint firstItem="jJ2-1y-6qr" firstAttribute="top" secondItem="sPV-vr-h6y" secondAttribute="bottom" id="MZx-9u-VpL"/>
                             <constraint firstItem="1od-oO-C9Z" firstAttribute="top" secondItem="sPV-vr-h6y" secondAttribute="bottom" id="PMO-aM-QNA"/>
+                            <constraint firstAttribute="trailing" secondItem="1od-oO-C9Z" secondAttribute="trailing" id="gbd-wb-w9C"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="width" secondItem="jJ2-1y-6qr" secondAttribute="width" id="gjo-fP-4OD"/>
                             <constraint firstItem="1od-oO-C9Z" firstAttribute="centerY" secondItem="jJ2-1y-6qr" secondAttribute="centerY" id="h5v-8s-Z6d"/>
                             <constraint firstItem="jJ2-1y-6qr" firstAttribute="leading" secondItem="qIt-2L-jzL" secondAttribute="leading" id="hZG-3S-5qU"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="width" secondItem="jJ2-1y-6qr" secondAttribute="width" id="iCu-ov-bUu"/>
                             <constraint firstAttribute="trailing" secondItem="1od-oO-C9Z" secondAttribute="trailing" id="sCz-Dt-b8D"/>
                             <constraint firstItem="1od-oO-C9Z" firstAttribute="leading" secondItem="qIt-2L-jzL" secondAttribute="leading" constant="187" id="viw-2v-tIG"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="leading" secondItem="jJ2-1y-6qr" secondAttribute="trailing" id="wGM-Sy-N34"/>
+                            <constraint firstItem="1od-oO-C9Z" firstAttribute="top" secondItem="sPV-vr-h6y" secondAttribute="bottom" id="z3R-Rx-i21"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0aC-36-n8Y"/>
+                                <exclude reference="hZG-3S-5qU"/>
+                                <exclude reference="ATe-9c-8hM"/>
+                                <exclude reference="PMO-aM-QNA"/>
+                                <exclude reference="h5v-8s-Z6d"/>
+                                <exclude reference="iCu-ov-bUu"/>
+                                <exclude reference="sCz-Dt-b8D"/>
+                                <exclude reference="viw-2v-tIG"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="NX0-NT-4Hh">
                         <barButtonItem key="rightBarButtonItem" title="Today" id="EPc-Hf-vd4">
@@ -99,7 +129,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1021.6" y="-773.16341829085468"/>
+            <point key="canvasLocation" x="1020" y="-773.23943661971828"/>
         </scene>
     </scenes>
 </document>

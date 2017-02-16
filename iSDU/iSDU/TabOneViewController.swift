@@ -23,6 +23,7 @@ class TabOneViewController: UIViewController , CLLocationManagerDelegate{
     private var calendarView: CVCalendarView!
     
     var currentCalendar: Calendar!
+    let textColor = UIColor(red: 100/255, green: 149/255, blue: 237/255, alpha: 1)
     
     @IBOutlet weak var previousView: UIView!
     @IBOutlet weak var nextView: UIView!
@@ -38,11 +39,12 @@ class TabOneViewController: UIViewController , CLLocationManagerDelegate{
         //Calendar
         currentCalendar = Calendar.init(identifier: .gregorian)
         
-        self.menuView = CVCalendarMenuView(frame: CGRect(x: 0, y: 80 , width: self.view.bounds.width, height: 15))
-        self.calendarView = CVCalendarView(frame: CGRect(x:0 , y: 110, width:self.view.bounds.width , height: 30))
+        self.menuView = CVCalendarMenuView(frame: CGRect(x: 0, y: 80 , width: self.view.bounds.width, height: 20))
+        self.calendarView = CVCalendarView(frame: CGRect(x:0 , y: 100, width:self.view.bounds.width , height: 30))
         
         self.menuView.menuViewDelegate = self
         self.calendarView.calendarDelegate = self
+        self.calendarView.calendarAppearanceDelegate = self
         
         self.view.addSubview(menuView)
         self.view.addSubview(calendarView)
@@ -143,7 +145,8 @@ class TabOneViewController: UIViewController , CLLocationManagerDelegate{
 }
 
 //Calendar
-extension TabOneViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
+extension TabOneViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelegate ,CVCalendarViewAppearanceDelegate{
+
     func presentationMode() -> CalendarMode {
         return .weekView
     }
@@ -169,5 +172,31 @@ extension TabOneViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelega
     func shouldShowWeekdaysOut() -> Bool {
         return true
     }
+    
+    
+    //星期文字颜色
+    func dayOfWeekTextColor(by weekday: Weekday) -> UIColor {
+        return self.textColor
+    }
+    
+    func dayOfWeekFont() -> UIFont {
+        return UIFont.systemFont(ofSize: 15)
+    }
+    
+    //星期模式
+    func weekdaySymbolType() -> WeekdaySymbolType {
+        return .short
+    }
+    
+    //颜色设计
+    
+    func dayLabelColor(by weekDay: Weekday, status: CVStatus, present: CVPresent)
+        -> UIColor? {
+            switch (weekDay, status, present) {
+            case (_, .selected, _), (_, .highlighted, _): return UIColor.white
+            default: return UIColor.black
+            }
+    }
+    
     
 }
