@@ -1,6 +1,6 @@
 # iSDU
 
-iSDU is an iOS APP for students of ShangDon Univercity 
+iSDU is an iOS APP for students of ShanDong Univercity 
 
 
 ### These functions will come true:
