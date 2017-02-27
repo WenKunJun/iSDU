@@ -17,6 +17,7 @@
 		2743D4F71E4AFC1F00C2EE50 /* TabOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2743D4F61E4AFC1F00C2EE50 /* TabOneViewController.swift */; };
 		27A6B4981E40676900BBCAA9 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6B4971E40676900BBCAA9 /* WelcomePage.swift */; };
 		27A6B49E1E406D9A00BBCAA9 /* GuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6B49D1E406D9A00BBCAA9 /* GuideCell.swift */; };
+		27AD930C1E641BFC0007AB34 /* TabTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AD930B1E641BFC0007AB34 /* TabTwoViewController.swift */; };
 		721606691E4860CE00411670 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721606681E4860CD00411670 /* MainViewController.swift */; };
 		7216066C1E48637100411670 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7216066A1E48637100411670 /* First.storyboard */; };
 		7216066E1E48639F00411670 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7216066D1E48639F00411670 /* Second.storyboard */; };
@@ -88,6 +89,7 @@
 		27A6B4A11E40814E00BBCAA9 /* iSDU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSDU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A6B4A21E40814E00BBCAA9 /* iSDUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSDUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A6B4A31E40814E00BBCAA9 /* iSDUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSDUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27AD930B1E641BFC0007AB34 /* TabTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabTwoViewController.swift; sourceTree = "<group>"; };
 		414E26A7E8009D9F822B7C58 /* Pods-iSDU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSDU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSDU/Pods-iSDU.release.xcconfig"; sourceTree = "<group>"; };
 		6F4235FCBD8E3C10AD3F712F /* Pods-iSDU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSDU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSDU/Pods-iSDU.debug.xcconfig"; sourceTree = "<group>"; };
 		721606681E4860CD00411670 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Assets.xcassets/MainViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				27A6B4971E40676900BBCAA9 /* WelcomePage.swift */,
 				27A6B49D1E406D9A00BBCAA9 /* GuideCell.swift */,
 				2743D4F61E4AFC1F00C2EE50 /* TabOneViewController.swift */,
+				27AD930B1E641BFC0007AB34 /* TabTwoViewController.swift */,
 			);
 			name = Ui;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			files = (
 				722D82C51E4B035E00351231 /* CVDate.swift in Sources */,
 				27A6B49E1E406D9A00BBCAA9 /* GuideCell.swift in Sources */,
+				27AD930C1E641BFC0007AB34 /* TabTwoViewController.swift in Sources */,
 				722D82C81E4B035E00351231 /* CVScrollDirection.swift in Sources */,
 				722D82B81E4B035E00351231 /* CVCalendarMonthContentViewController.swift in Sources */,
 				2743D4F71E4AFC1F00C2EE50 /* TabOneViewController.swift in Sources */,
